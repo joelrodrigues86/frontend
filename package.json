@@ -1,0 +1,49 @@
+{
+  "name": "frontend",
+  "description": "An Aurelia 2 client application.",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "???"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@aurelia/fetch-client": "^2.0.0-beta.15",
+    "@aurelia/router": "latest",
+    "aurelia": "latest"
+  },
+  "devDependencies": {
+    "@aurelia/testing": "latest",
+    "@aurelia/webpack-loader": "latest",
+    "@types/node": "^20.12.3",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/parser": "^7.5.0",
+    "autoprefixer": "^10.4.19",
+    "css-loader": "^6.10.0",
+    "dotenv-webpack": "^8.1.0",
+    "eslint": "^8.57.0",
+    "html-webpack-plugin": "^5.6.0",
+    "htmlhint": "^1.1.4",
+    "postcss": "^8.4.38",
+    "postcss-loader": "^8.1.1",
+    "style-loader": "^3.3.4",
+    "stylelint": "^16.3.1",
+    "stylelint-config-standard": "^36.0.0",
+    "ts-loader": "^9.5.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.3",
+    "webpack": "^5.91.0",
+    "webpack-bundle-analyzer": "^4.10.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "scripts": {
+    "lint:js": "eslint src --ext .js,.ts",
+    "lint:css": "stylelint \"src/**/*.css\"",
+    "lint:html": "htmlhint -c .htmlhintrc src",
+    "lint": "npm run lint:js && npm run lint:html && npm run lint:css",
+    "start": "webpack serve",
+    "build": "webpack --env production",
+    "analyze": "webpack --env production --analyze"
+  }
+}

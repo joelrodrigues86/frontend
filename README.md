@@ -1,3 +1,11 @@
+# Unlimited range RC coiso
+
+This is an Aurelia 2 project!
+Don't forget to YARN
+To start? Yarn start
+
+
+
 # frontend
 
 This project is bootstrapped by [aurelia/new](https://github.com/aurelia/new).
